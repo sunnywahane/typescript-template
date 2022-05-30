@@ -1,8 +1,8 @@
-import { dummyOutput } from '../../src/Dummy'
+import { getPrimeFactorsOf } from '../../src/Dummy'
 
-describe("Dummy Test", () => {
-    it("should assert on the dummy output", () => {
-        const dummyOutputReturned = dummyOutput("hello")
-        expect(dummyOutputReturned).toBe("hellohello")
+describe("Prime factors of 2", () => {
+    it("should return 2", () => {
+        const output = getPrimeFactorsOf(2)
+        expect(output).toBe([2])
     })
 })
