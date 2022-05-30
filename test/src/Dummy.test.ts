@@ -22,18 +22,23 @@ describe("Test for getPrimeFactorsOf method", () => {
     })
 
     it("getPrimeFactorsOf 6 should return [2,3]", () => {
-                const output = getPrimeFactorsOf(6)
-                expect(output).toEqual([2,3])
+            const output = getPrimeFactorsOf(6)
+            expect(output).toEqual([2,3])
     })
 
     it("getPrimeFactorsOf 7 should return [7]", () => {
-                    const output = getPrimeFactorsOf(7)
-                    expect(output).toEqual([7])
+            const output = getPrimeFactorsOf(7)
+            expect(output).toEqual([7])
     })
 
     it("getPrimeFactorsOf 8 should return [2,2,2]", () => {
-                        const output = getPrimeFactorsOf(8)
-                        expect(output).toEqual([2,2,2])
+             const output = getPrimeFactorsOf(8)
+             expect(output).toEqual([2,2,2])
+    })
+
+    it("getPrimeFactorsOf 9 should return [3,3]", () => {
+              const output = getPrimeFactorsOf(9)
+              expect(output).toEqual([3,3])
     })
 
 })
