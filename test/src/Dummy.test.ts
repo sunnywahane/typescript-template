@@ -24,6 +24,10 @@ describe("Test for getPrimeFactorsOf method", () => {
     it("getPrimeFactorsOf 6 should return [2,3]", () => {
                 const output = getPrimeFactorsOf(6)
                 expect(output).toEqual([2,3])
-        })
+    })
 
+    it("getPrimeFactorsOf 7 should return [7]", () => {
+                    const output = getPrimeFactorsOf(7)
+                    expect(output).toEqual([7])
+    })
 })
