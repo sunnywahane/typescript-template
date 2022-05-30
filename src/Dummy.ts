@@ -1,14 +1,10 @@
 export const getPrimeFactorsOf = (input: number) => {
     var  factors = [];
-     while(input%2 == 0) {
-        factors.push(2)
-        input = input/2
+     for(var i :number = 2; i<= input; ++i){
+        while(input%i ==0){
+            factors.push(i)
+            input = input/i
+        }
      }
-     if(input%3==0) {
-        factors.push(3)
-        input = input/3
-     }
-     if(input!=1)
-     factors.push(input)
      return factors
 }
