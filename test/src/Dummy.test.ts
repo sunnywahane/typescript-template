@@ -13,3 +13,10 @@ describe("Prime factors of 3", () => {
         expect(output).toEqual([3])
     })
 })
+
+describe("Prime factors of 4", () => {
+    it("should return 4", () => {
+        const output = getPrimeFactorsOf(4)
+        expect(output).toEqual([2,2])
+    })
+})
